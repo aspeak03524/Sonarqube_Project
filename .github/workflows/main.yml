@@ -34,7 +34,7 @@ jobs:
         name: python-code-artifact
         path: artifact/
   deploy:
-    runs-on: self-hosted  # Run on your self-hosted runner
+    runs-on: ubuntu-latest  # Run on your self-hosted runner
     needs: build
     steps:
     - name: Checkout code
